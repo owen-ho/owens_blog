@@ -9,6 +9,7 @@ My production version of this website can be found at https://www.monklun.buzz/,
 	- Drag and drop to upload image
 	- Via markdown file or form
 - Webhook for automated deployment
+- Will document rest soon!
 
 ## TODOS
 - Should really start writing tests
