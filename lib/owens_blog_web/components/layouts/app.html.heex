@@ -1,0 +1,39 @@
+<header class="px-4 sm:px-6 lg:px-8">
+  <div class="flex items-start min-[450px]:items-center justify-between py-3 text-sm">
+    <div class="app-nav-buttons">
+      <a href={~p"/"} class="text-lg font-bold">Owen's Website</a> <a href={~p"/"}>Blog</a>
+      <a href={~p"/chat"}>Chat</a> <a href={~p"/light"}>Lightroom</a>
+    </div>
+
+    <div class="app-nav-menu basis-full">
+      <div tabindex="0" class="cursor-pointer w-min">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 448 512"
+          class="w-5 h-5 m-2 fill-white"
+        >
+          <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+          <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+        </svg>
+      </div>
+      <div class="dropdown-content">
+        <div><a href={~p"/"}>Blog</a></div>
+
+        <div><a href={~p"/chat"}>Chat</a></div>
+
+        <div><a href={~p"/light"}>Lightroom</a></div>
+      </div>
+    </div>
+    <div class="absolute right-4">
+      <DarkMode.button assigns={assigns} nonce={assigns[:csp_nonce_value]} />
+    </div>
+  </div>
+</header>
+
+<div class="hero-image">
+  <main class="px-4 py-5 lg:py-16 sm:px-6 lg:px-8 dark:text-slate-400">
+    <div class="mx-auto max-w-2xl">
+      <.flash_group flash={@flash} /> <%= @inner_content %>
+    </div>
+  </main>
+</div>

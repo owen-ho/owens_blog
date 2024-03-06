@@ -1,0 +1,40 @@
+<div class="text-white">
+  <p>Your room is: <strong><%= @room_id %></strong></p>
+
+  <p>Your username is: <strong><%= @username %></strong></p>
+  <div id="chat-container">
+    <div id="chat-messages" phx-update="stream">
+      <%= for message <- @messages do %>
+        <.display_message message={message} />
+      <% end %>
+    </div>
+
+    <div id="user-list" class="">
+      <h3>Users online</h3>
+
+      <%= for username <- @user_list do %>
+        <p><%= username %></p>
+      <% end %>
+    </div>
+  </div>
+
+  <div class="dark:bg-black bg-white opacity-80 rounded-lg">
+    <.form for={@form} phx-submit="submit-message" phx-change="form_update">
+      <.input
+        type="text"
+        field={@form[:message]}
+        value={@chatFormInput}
+        placeholder="Enter your message..."
+        class_inject="placeholder-gray-400 placeholder:italic"
+      />
+    </.form>
+  </div>
+
+  <div id="user-list-mobile" class="hidden">
+    <h3>Users online</h3>
+
+    <%= for username <- @user_list do %>
+      <p><%= username %></p>
+    <% end %>
+  </div>
+</div>
