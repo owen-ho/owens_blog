@@ -2,7 +2,7 @@
 
 This repo is a copy of my primary development/production repo where I do my development so I can showcase to the public without disclosing my keys.
 
-My production version of this website can be found [here](https://live-view-resume.fly.dev/), where I run this Elixir project on a fly.io instance which automatically scales down to 0 when no users are on the site, which might take a while to load if you are the first person to visit in a while.
+My production version of this website can be found [here](https://owens-blog.fly.dev/), where I run this Elixir project on a fly.io instance which automatically scales down to 0 when no users are on the site, which might take a while to load if you are the first person to visit in a while.
 
 ## Key features
 - Uploading
