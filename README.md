@@ -2,7 +2,7 @@
 
 This repo is a copy of my primary development/production repo where I do my development so I can showcase to the public without disclosing my keys.
 
-My production version of this website can be found at https://www.monklun.buzz/, where I run this Elixir project in a Docker container with a Postgres instace and a MinIO instance for storage of images in a local version of S3 buckets (the Postgres instance is completely unnecessary, I only wired it up so I could learn how to use Elixir's Ecto CRUD operations).
+My production version of this website can be found [here](https://live-view-resume.fly.dev/), where I run this Elixir project on a fly.io instance.
 
 ## Key features
 - Uploading
